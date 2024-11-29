@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   Chart as ChartJs,
   CategoryScale,
@@ -12,8 +13,8 @@ import {
   Title,
   Tooltip,
   Legend,
+  LineController 
 } from "chart.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 ChartJs.register(
   CategoryScale,
@@ -23,7 +24,8 @@ ChartJs.register(
   PointElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  LineController 
 );
 
 const BarGraph = () => {
