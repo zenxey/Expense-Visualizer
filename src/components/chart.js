@@ -1,3 +1,11 @@
+/**
+ * App.js
+ * 
+ * @author Nivesh Patil
+ * 
+ * Date: 2024-11-29
+ */
+
 import React, { useRef, useState, useEffect } from "react";
 import { Bar } from "react-chartjs-2";
 import { jsPDF } from "jspdf";
